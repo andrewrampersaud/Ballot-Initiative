@@ -1,0 +1,385 @@
+/* @font-face fonts */
+
+
+/*title font*/
+
+@font-face {
+    font-family: 'carbontyperegular';
+    src: url('../fonts/carbontype-webfont.eot');
+    src: url('../fonts/carbontype-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/carbontype-webfont.woff2') format('woff2'),
+         url('../fonts/carbontype-webfont.woff') format('woff'),
+         url('../fonts/carbontype-webfont.ttf') format('truetype'),
+         url('../fonts/carbontype-webfont.svg#carbontyperegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Headline/subhead fonts*/
+
+@font-face {	
+			font-family: 'allertamedium';
+			src: url('../fonts/allerta_medium-webfont.eot');
+			src: url('../fonts/allerta_medium-webfont.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/allerta_medium-webfont.woff2') format('woff2'),
+			url('../fonts/allerta_medium-webfont.woff') format('woff'),
+			url('../fonts/allerta_medium-webfont.ttf') format('truetype'),
+			url('../fonts/allerta_medium-webfont.svg#allertamedium') format('svg');
+			font-weight: normal;
+			font-style: normal;}
+
+
+/*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+/*box-sizing*/
+
+*{box-sizing: border-box;}
+
+/*body background colour*/
+
+body {background-color:slategrey;}
+
+/*navbar links*/
+
+a:link {text-decoration:none;
+        color:black;}
+
+a:visited {color:black;}
+
+a:hover {color:white;
+         background-color:black;}
+
+.clear:after {content:" ";
+              display:table;
+              clear:both;}
+
+/*wrapper attributes*/
+
+.wrapper {width:960px;
+          margin:auto;      
+          margin-top:-5px;
+          background-color: white;
+          border: 1px solid black;}
+		  
+		  
+/*header attributes*/
+
+.mainheader  {position:fixed;
+              width:958px;
+              margin:auto;
+              height:50px;
+	          background-color:#FE0000;
+			  text-align:left;
+			  padding-top:10px;
+              z-index: 20;
+              border-bottom:1px solid black;}
+			 
+
+/*title attributes*/
+			 
+.title      {font-family:'carbontyperegular';
+	         font-size:25px;
+			 letter-spacing:5px;
+			 margin-left:19px;
+             padding-top: 3px;
+			 color:white;}
+			  
+.title a:link {text-decoration:none;
+               color:white;}
+
+.title a:visited {color:white;}
+
+
+.title a:hover {color:white;
+				background-color:#FE0000;}
+		  
+/*navbar settings*/		  
+		  
+		  
+.navigation {position:absolute;
+             top:10px;
+             right:0;
+			 padding-right:20px;
+             z-index:15;}
+
+
+.navigation li    {display:inline-block;
+				   font-family: 'allertamedium';
+                   font-weight:600;
+				   margin-top:5px;}
+				   
+.navigation a {padding:13px 10px 16px;}
+
+
+/*homepage background photo*/
+
+#background        {width:958px;
+                   background-image: url("../images/ballotbackground.jpg");
+				   background-repeat:no-repeat;
+				   background-size:cover;
+                   -webkit-background-size: cover;
+                   -moz-background-size: cover;
+                   -o-background-size: cover;
+                   height:700px;
+                   position:relative;}
+				   
+/*homepage black box*/
+				   
+#frontpagebox {background-color:rgba(0,0,0,0.8);
+			   font-family:'allertamedium';
+			   font-size:25px;
+			   color:white;
+			   width:300px;
+			   height:200px;
+			   padding:40px 20px 10px;
+			   position: absolute;
+			   top:200px;
+			   left:60px;
+			   border-radius:20px;
+			   line-height:1.2;
+               z-index:10;}
+				   
+
+/*footer settings*/
+
+footer      {height:50px;
+	         background-color:#FE0000;
+			 font-family:'Open Sans', sans-serif;
+			 font-weight:500;
+             font-size:15px;
+			 padding-top:20px;
+             padding-left:20px;
+             border-top: 1px black solid;}
+			
+
+footer a {font-weight:900;}
+
+
+footer a:hover {color:black;
+                background-color:#FE0000;}
+				
+
+/*styles for parties.html*/
+							  
+#partycontent {padding-top:120px;
+			   line-height:1.5;}
+			   
+
+#partycontent h1  {margin-left:100px;
+                   margin-bottom: 30px;
+                   font-family:'allertamedium'; 
+                   font-size:40px;
+                   font-weight: 900;}
+
+
+#partycontent p {font-family:'Open Sans', sans-serif;
+                 font-size:16px;}
+
+            
+#partycontentdeck {margin-left:150px;}
+
+
+
+
+#partycontent h2 {font-family: 'allertamedium';
+                  font-size: 25px;
+                  margin-bottom: 10px;
+                  margin-top:-6px;}
+
+
+.party {margin-bottom:60px;
+        margin-left: 100px;}
+
+.party:first-of-type {margin-top: 70px;
+                      margin-bottom:30px;}
+
+.party:last-of-type {margin-bottom:150px;}
+
+
+.logo {width:130px;
+       margin:2px 40px 30px 40px;
+       float:left;}
+
+
+.description {width:500px;
+              margin-right:110px;
+              float:right;}
+
+/*media.html list style*/
+
+
+
+/*general copy styles*/
+
+.bodycontent {padding-top:120px;}
+
+.bodycontent h1 {font-family:'allertamedium';
+                 font-size:40px;
+                 font-weight:900;
+                 margin:0 0 70px 100px;}
+
+.bodycontent h2 {font-family:'allertamedium';
+                 font-size:25px;
+                 width:760px;
+                 margin:auto;
+                 margin-bottom: 40px;}
+
+.bodycontent article {margin-bottom: 70px;}
+
+.italic {font-style: italic;}
+
+.pagelinks a:link {font:16px 'Open Sans', sans-serif;
+                   color:#061283;}
+
+.pagelinks a:visited {color:blueviolet;}
+
+.pagelinks a:hover {background-color:white;
+                    color:red;}
+
+.pagelinks a:active {color:red;}
+
+
+.siteparagraph {width:760px;
+                margin:auto;
+                font-family:'Open Sans', sans-serif;
+                font-size:16px;
+                line-height: 1.5;}
+
+.photocredit {font: 10px 'Open Sans', sans-serif;
+              margin-bottom: 30px;
+              margin-left:100px;}
+
+.mediaphoto      {margin:0px 98px 3px;
+                  width: 762px;             
+                  height:509px;             
+                  border:1px solid black;}
+
+
+/*media.html list attributes*/
+
+#newslist {margin-bottom:50px;}
+
+#newsoutlets {margin:40px 0 0 190px;
+              list-style-image:url("../images/newsgraphic.jpg");
+              font: 16px 'allertamedium';}
+
+#newsoutlets li {margin-bottom: 20px;}
+
+#newsoutlets li a:link {color:#061283;}
+
+#newsoutlets li a:visited {color:blueviolet;}
+
+#newsoutlets li a:hover {background-color: white;
+                         color:red;}
+
+#newsoutlets li a:active {color:red;}
+
+
+/*styles for about.html*/
+
+#about p {margin-bottom: 20px;}
+
+#aboutbox {position:relative;}
+
+#authorphoto {width:208px;
+              height:271px;
+              margin:50px 0;
+              border: 1px solid black;
+              position:relative;
+              left:240px;
+              bottom:0;
+              z-index:1;}
+
+#byline  {font: 19px 'allertamedium';
+          font-weight:600;
+          height:303px;
+          border-left: solid 3px black;
+          padding-left: 20px;
+          position:absolute;
+          top:0;
+          left:480px;
+          z-index:1;}
+
+#about:last-of-type {margin-bottom:130px;}
+
+
+/*campaigns.html styles*/
+
+
+#writphoto {width:570px;
+            height:382px;
+            border:1px solid black;
+            margin:40px 198px 110px;}
+
+#writphoto p:nth-child(2) {font: 10px 'Open Sans', sans-serif;
+                           margin:5px 0 10px;}
+
+#writphoto p:nth-child(3) {font: 13px 'Open Sans', sans-serif;
+                           margin-bottom:10px;}
+
+
+#ridingmap {width:766px;
+           height:576px;
+           border:1px solid black;
+           margin:0 99px 110px;}
+
+#ridingmap p:nth-child(2) {font: 10px 'Open Sans', sans-serif;
+                           margin:5px 0 10px;}
+           
+#campaigns1 p:nth-child(3) {margin-bottom:20px;}
+
+#campaigns2 p:nth-child(2) {margin-bottom:20px;}
+            p:nth-child(3) {margin-bottom:40px;}
+
+#campaigns3 p:nth-child(2) {margin-bottom:20px;}
+
+#campaigns6 p:nth-child(2) {margin-bottom:20px;}
+            p:nth-child(3) {margin-bottom:50px;}
+
+#campaigns6 iframe {margin:0 200px;
+                    width:560px;
+                    height:400px;
+					border:none;}
+
+
+#campaigns7 p:nth-child(2) {margin-bottom:20px;}
+
+#campaigns7 {margin-bottom:150px;}
